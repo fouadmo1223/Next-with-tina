@@ -1,0 +1,375 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-norsal), sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Consolas, monospace;
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --breakpoint-3xl: 120rem;
+}
+
+:root {
+  color-scheme: light;
+  --background: #ffffff;
+  --foreground: #171717;
+
+  --primary: #2563eb;
+  --primary-foreground: #ffffff;
+
+  --secondary: #dc2626;
+  --secondary-foreground: #ffffff;
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+
+  --primary: #3b82f6;
+  --primary-foreground: #ffffff;
+
+  --secondary: #ef4444;
+  --secondary-foreground: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Native scrollbars for the page and nested scrollable panels. */
+@media (forced-colors: none) {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #884fb4 #f3edf7;
+  }
+
+  @supports selector(::-webkit-scrollbar) {
+    * {
+      scrollbar-width: auto;
+      scrollbar-color: auto;
+    }
+
+    ::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+
+    ::-webkit-scrollbar-track,
+    ::-webkit-scrollbar-corner {
+      background: #f3edf7;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      min-height: 40px;
+      border: 2px solid #f3edf7;
+      border-radius: 999px;
+      background: #884fb4;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #6c3d8e;
+    }
+
+    ::-webkit-scrollbar-thumb:active {
+      background: #85b7bc;
+    }
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans, system-ui, sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[dir="rtl"] {
+  font-family: var(--font-sans, "Segoe UI", Tahoma, Arial, sans-serif);
+}
+
+::selection {
+  background-color: #171717;
+  color: #ffffff;
+}
+
+.dark ::selection {
+  background-color: #ffffff;
+  color: #171717;
+}
+
+/* Stops where the small circle touches the screen edge, at either end of the big circle's visible border. */
+@keyframes orbit-border {
+  from {
+    transform: rotate(-75.2deg);
+  }
+  to {
+    transform: rotate(75.2deg);
+  }
+}
+
+/* A light that travels around a card's border. The card sets when it shows and whether it runs. */
+@property --border-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+/* The request form's CV cards and their lightbox. */
+@keyframes card-select {
+  0% { scale: 1; box-shadow: 0 0 0 0 rgb(108 61 142 / .45); }
+  45% { scale: 1.035; }
+  100% { scale: 1; box-shadow: 0 0 0 14px rgb(108 61 142 / 0); }
+}
+
+@keyframes card-appear {
+  from { opacity: 0; translate: 0 18px; filter: blur(8px); }
+  to { opacity: 1; translate: 0 0; filter: blur(0); }
+}
+
+@keyframes lightbox-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes border-spin {
+  to {
+    --border-angle: 360deg;
+  }
+}
+
+@layer components {
+  .spin-border {
+    padding: 4px;
+    background: conic-gradient(from var(--border-angle), transparent 0 60%, #85b7bc 80% 100%);
+    mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
+    animation: border-spin 3s linear infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .spin-border {
+      background: #85b7bc;
+      animation: none;
+    }
+  }
+}
+
+/* Entrances that play on first paint, before any JavaScript has loaded. */
+@keyframes reveal-blur {
+  from {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@keyframes reveal-drop {
+  from {
+    clip-path: inset(0% 0% 100% 0% round 16px);
+  }
+  to {
+    clip-path: inset(0% 0% 0% 0% round 16px);
+  }
+}
+
+@keyframes reveal-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes float-y {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 0 -7px;
+  }
+}
+
+@keyframes map-drift {
+  from {
+    transform: translateX(-12px) scale(1);
+  }
+  to {
+    transform: translateX(12px) scale(1.03);
+  }
+}
+
+.reveal-blur {
+  animation: reveal-blur var(--reveal-duration, 0.6s) cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0s) both;
+}
+
+.reveal-drop {
+  animation: reveal-drop 0.9s cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+
+.float-pill {
+  animation:
+    reveal-fade 0.35s linear var(--reveal-delay, 0s) both,
+    float-y var(--float-duration, 3.2s) ease-in-out calc(var(--reveal-delay, 0s) + 0.35s) infinite;
+}
+
+.plane-float {
+  animation: float-y 3.4s ease-in-out infinite;
+}
+
+.map-drift {
+  animation: map-drift 16s ease-in-out infinite alternate;
+}
+
+@keyframes shape-wiggle {
+  0%, 100% { rotate: -20deg; scale: 1; }
+  12% { rotate: -6deg; }
+  20% { rotate: -14deg; }
+  50% { rotate: 24deg; scale: 1.06; }
+  62% { rotate: 10deg; }
+  70% { rotate: 18deg; }
+}
+
+.shape-wiggle {
+  animation: shape-wiggle 6s ease-in-out infinite;
+}
+
+/* A page's sections, stacked with no gap: each section's own padding sets the space around it. */
+.page-sections {
+  display: flex;
+  flex-direction: column;
+}
+
+/* A blog article's long description, which arrives as plain HTML. */
+.article-body {
+  color: #5d5861;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/* Dashboard HTML can include inline editor styles; keep it within the site's article theme. */
+.article-body,
+.article-body * {
+  background: transparent !important;
+  font-family: var(--font-sans, system-ui, sans-serif) !important;
+  color: #5d5861 !important;
+}
+
+.article-body > * + * {
+  margin-top: 12px;
+}
+
+.article-body :is(h1, h5, h6) {
+  color: #6c3d8e !important;
+}
+
+.article-body :is(h2, h3, h4) {
+  margin-top: 28px;
+  color: #6c3d8e !important;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.article-body h2 {
+  font-size: 24px;
+}
+
+.article-body h3 {
+  font-size: 20px;
+}
+
+.article-body h4 {
+  font-size: 18px;
+}
+
+.article-body :is(ul, ol) {
+  padding-inline-start: 22px;
+}
+
+.article-body ul {
+  list-style: disc;
+}
+
+.article-body ol {
+  list-style: decimal;
+}
+
+.article-body li::marker {
+  color: #85b7bc !important;
+}
+
+.article-body a {
+  color: #6c3d8e !important;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.article-body :is(strong, b) {
+  color: #3d3442 !important;
+  font-weight: 700;
+}
+
+.article-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+.article-body blockquote {
+  border-inline-start: 3px solid #85b7bc;
+  padding-inline-start: 16px;
+}
+
+@media (min-width: 64rem) {
+  .article-body {
+    font-size: 18px;
+  }
+
+  .article-body h2 {
+    font-size: 30px;
+  }
+
+  .article-body h3 {
+    font-size: 24px;
+  }
+
+  .article-body h4 {
+    font-size: 20px;
+  }
+}
+
+/* A last section can run behind the footer, so its background also shows above the footer's wave. */
+body:has([data-behind-footer]) footer {
+  background-color: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-delay: 0s !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

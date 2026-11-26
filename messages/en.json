@@ -1,0 +1,357 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "blog": "Blog",
+    "contact": "Contact",
+    "countries": "Recruitment countries",
+    "cvs": "CVs",
+    "hourly": "Hourly domestic help",
+    "installments": "Recruitment installments",
+    "faq": "FAQs",
+    "request": "Request recruitment"
+  },
+  "legalPage": {
+    "breadcrumb": "Breadcrumb"
+  },
+  "homeAbout": {
+    "photosLabel": "Recruitment consultation and domestic worker portraits"
+  },
+  "homeServices": {
+    "goTo": "Go to card {page}"
+  },
+  "homeProfessions": {
+    "tabsLabel": "Professions"
+  },
+  "contactPage": {
+    "breadcrumb": "Breadcrumb",
+    "mapHeading": "We look forward to welcoming you"
+  },
+  "countriesPage": {
+    "breadcrumb": "Breadcrumb"
+  },
+  "blogPage": {
+    "breadcrumb": "Breadcrumb",
+    "title": "Blog",
+    "relatedCvs": {
+      "heading": "Meet the available workers",
+      "intro": "Browse the CVs and compare experience to choose the best fit for your needs."
+    },
+    "faqHeading": "Frequently asked questions"
+  },
+  "requestPage": {
+    "breadcrumb": "Breadcrumb",
+    "current": "Recruitment request",
+    "form": {
+      "contactHeading": "Contact details",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Mobile number",
+      "phoneHint": "Enter a valid mobile number",
+      "detailsHeading": "Recruitment details",
+      "filters": {
+        "nationality": "Nationality",
+        "profession": "Required profession",
+        "experience": "Required experience",
+        "age": "Required age"
+      },
+      "chooseHeading": "Choose the right CV",
+      "chooseIntro": "These options match your request details.",
+      "results": "{count, plural, one {# result} other {# results}}",
+      "cardEyebrow": "CV details",
+      "cvNumber": "CV {number}",
+      "choose": "Select for request",
+      "chosen": "Selected",
+      "cvImageAlt": "Sample CV for {name}",
+      "selectedCv": "Selected CV: {number} — {profession} — {nationality}",
+      "change": "Change selection",
+      "details": "Inquiry details",
+      "detailsPlaceholder": "Write your message here",
+      "submit": "Send recruitment request",
+      "sending": "Sending request...",
+      "success": "Your recruitment request was sent successfully.",
+      "error": "The request could not be sent. Please try again.",
+      "enlargeCv": "Enlarge the CV for {name}",
+      "close": "Close"
+    }
+  },
+  "cvsPage": {
+    "breadcrumb": "Breadcrumb"
+  },
+  "homeCvs": {
+    "filters": {
+      "nationality": "Nationality",
+      "profession": "Profession",
+      "age": "Age",
+      "experience": "Experience"
+    },
+    "all": "All",
+    "rangeFrom": "From",
+    "rangeTo": "To",
+    "filter": "Filter",
+    "empty": "No CVs match these options.",
+    "viewCv": "View CV",
+    "browseAll": "Browse all CVs",
+    "startRequest": "Start your request",
+    "viewDetails": "View details",
+    "browse": "Browse CVs",
+    "ask": "Ask what's available",
+    "cost": "Recruitment cost",
+    "costValue": "{amount} SAR",
+    "installment": "Installments",
+    "previous": "Previous",
+    "next": "Next",
+    "goTo": "Go to page {page}",
+    "ageValue": "{count, plural, one {# year} other {# years}}",
+    "experienceValue": "{count, plural, one {# year} other {# years}}",
+    "options": {
+      "nationality": {
+        "kenya": "Kenya",
+        "uganda": "Uganda",
+        "ethiopia": "Ethiopia",
+        "philippines": "Philippines",
+        "bangladesh": "Bangladesh",
+        "pakistan": "Pakistan",
+        "burundi": "Burundi"
+      },
+      "profession": {
+        "housemaid": "Housemaid",
+        "nanny": "Nanny"
+      },
+      "age": {
+        "under30": "Under 30",
+        "from30to40": "30 to 40",
+        "over40": "Over 40"
+      },
+      "experience": {
+        "upTo3": "Up to 3 years",
+        "from4to7": "4 to 7 years",
+        "over7": "Over 7 years"
+      }
+    }
+  },
+  "homeCountries": {
+    "explore": "Explore recruitment details and available options.",
+    "viewAll": "View all recruitment countries",
+    "guide": {
+      "eyebrow": "Recruitment guide",
+      "previous": "Previous",
+      "next": "Next",
+      "goTo": "Go to card {page}",
+      "heading": "Recruiting domestic workers from {country}",
+      "cards": {
+        "need": {
+          "title": "Start with your needs",
+          "description": "Decide on the profession and tasks you need at home, then review the CVs available from {country} and choose what fits."
+        },
+        "compare": {
+          "title": "How do you compare options?",
+          "points": {
+            "experience": "Review the experience and skills shown in the CV.",
+            "profession": "Compare the available professions and ages.",
+            "fit": "Check that the experience suits the work in your home.",
+            "ask": "Ask about any details you can't find in the CV."
+          }
+        },
+        "after": {
+          "title": "What happens after you choose?",
+          "description": "Once you choose a CV, you send your request details and the team contacts you to explain the contract steps and follow up on the procedures."
+        },
+        "cost": {
+          "title": "What determines the cost?",
+          "description": "The recruitment cost depends on the profession, the chosen CV and your request details, so we explain the value of your request before you complete it."
+        },
+        "details": {
+          "title": "Read the details",
+          "description": "Review the information available about recruiting from {country}, and ask about anything you'd like explained before you decide."
+        }
+      }
+    }
+  },
+  "homeTestimonials": {
+    "previous": "Previous",
+    "next": "Next",
+    "goTo": "Go to page {page}",
+    "ratingLabel": "Rated {rating} out of 5"
+  },
+  "homeBlog": {
+    "readMore": "Read article"
+  },
+  "homeFaq": {
+    "heading": "Common questions before you start recruiting",
+    "viewAll": "View all FAQs"
+  },
+  "homeContact": {
+    "channels": {
+      "whatsapp": "WhatsApp",
+      "email": "Email"
+    },
+    "form": {
+      "name": "Name",
+      "phone": "Mobile number",
+      "phoneHint": "Enter a valid mobile number",
+      "email": "Email",
+      "details": "Enquiry details",
+      "submit": "Send enquiry",
+      "sending": "Sending…",
+      "success": "WhatsApp opened with your enquiry. Send the message from there.",
+      "error": "WhatsApp isn't available right now. Please reach us by email.",
+      "close": "Close",
+      "detailsHint": "Write at least 10 characters"
+    }
+  },
+  "servicePages": {
+    "booking": {
+      "periodLabel": "Service period",
+      "periods": {
+        "hours": {
+          "tab": "Hourly",
+          "count": "Number of hours"
+        },
+        "days": {
+          "tab": "Daily",
+          "count": "Number of days"
+        },
+        "months": {
+          "tab": "Monthly",
+          "count": "Number of months"
+        }
+      },
+      "increase": "Increase",
+      "decrease": "Decrease",
+      "date": "Service date",
+      "datePlaceholder": "Choose a date",
+      "time": "Start time",
+      "timePlaceholder": "Choose a time",
+      "missing": "Choose a service date and start time first.",
+      "submit": "Register your interest on WhatsApp",
+      "message": "Hello,\n\nI would like to book the domestic help service.\n\nService type: {type}.\n{countLabel}: {count}.\nService date: {date}.\nStart time: {time}.\n\nPlease let me know the availability and cost.\n\nThank you",
+      "previousMonth": "Previous month",
+      "nextMonth": "Next month",
+      "close": "Close"
+    },
+    "calculator": {
+      "heading": "See your installment for your request",
+      "intro": "Enter the recruitment amount, then choose a period to see your estimated monthly installment.",
+      "amount": "Recruitment amount",
+      "currency": "SAR",
+      "period": "Requested installment period",
+      "months": "{count, plural, one {# month} other {# months}}",
+      "example": "Illustrative calculation",
+      "cta": "Start your request",
+      "resultTitle": "Estimated monthly installment",
+      "perMonth": "SAR / month",
+      "resultNote": "Over {months}, including a {fee}% fee",
+      "rowAmount": "Recruitment amount",
+      "rowFee": "Installment fee {fee}%",
+      "rowTotal": "Total after fees",
+      "disclaimer": "This installment is an estimate. Approval and the final period depend on the customer's eligibility, and the approved period may differ from the one requested.",
+      "whatsappMessage": "Hello,\n\nI'd like to ask about your domestic worker recruitment service with installments.\n\nRecruitment amount: {amount} SAR.\nInstallment period: {period}.\n\nPlease share the details, terms and required steps.\n\nThank you"
+    }
+  },
+  "footer": {
+    "follow": "Follow us",
+    "linksTitle": "Links",
+    "discoverTitle": "Discover",
+    "privacy": "Privacy policy",
+    "terms": "Terms and conditions",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "newsletterTitle": "Subscribe",
+    "newsletterPlaceholder": "Enter your email",
+    "newsletterSubmit": "Send",
+    "newsletterSubject": "Newsletter subscription request"
+  },
+  "common": {
+    "readMore": "Read More",
+    "learnMore": "Learn More",
+    "getStarted": "Get Started",
+    "viewAll": "View All",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Try Again"
+  },
+  "about": {
+    "breadcrumb": "Breadcrumb"
+  },
+  "theme": {
+    "light": "Light mode",
+    "dark": "Dark mode",
+    "toggle": "Toggle theme"
+  },
+  "locale": {
+    "en": "English",
+    "ar": "Arabic",
+    "switch": "Switch language"
+  },
+  "faqPage": {
+    "breadcrumb": "Breadcrumb"
+  },
+  "cvPage": {
+    "note": "Tell us what your home needs and we'll help you with the options and cost",
+    "download": "Download CV as PDF",
+    "downloading": "Downloading...",
+    "downloaded": "Downloaded",
+    "documentAlt": "{name}'s CV",
+    "detailsLabel": "CV details",
+    "groups": {
+      "personal": "Personal details",
+      "work": "Work details",
+      "recruitment": "Recruitment details",
+      "cost": "Cost"
+    },
+    "fields": {
+      "age": "Age",
+      "religion": "Religion",
+      "profession": "Profession",
+      "experience": "Years of experience",
+      "nationality": "Nationality",
+      "foreignOffice": "Foreign office",
+      "salary": "Monthly salary",
+      "recruitmentFee": "Recruitment fee",
+      "externalOfficeFee": "External office fee"
+    },
+    "applyHeading": "Application"
+  },
+  "mobileTabs": {
+    "label": "Quick navigation",
+    "home": "Home",
+    "countries": "Countries",
+    "cvs": "CVs",
+    "blog": "Blog"
+  },
+  "menu": {
+    "title": "Menu",
+    "open": "Open menu",
+    "close": "Close menu",
+    "whatsapp": "Contact us on WhatsApp"
+  },
+  "chat": {
+    "open": "Chat with us",
+    "close": "Close chat",
+    "title": "Customer service",
+    "status": "Online now, quick replies",
+    "teaser": "Need help choosing a worker? Ask us here",
+    "dismiss": "Dismiss",
+    "welcome": "Hi, welcome to Alnjoom. How can we help you today?",
+    "placeholder": "Write your message...",
+    "send": "Send",
+    "typing": "Typing",
+    "error": "Something went wrong. Please try again in a moment.",
+    "retry": "Try again",
+    "whatsapp": "Chat on WhatsApp",
+    "reset": "New conversation",
+    "suggestionsLabel": "Suggested questions",
+    "you": "You",
+    "agent": "Alnjoom team",
+    "suggestions": [
+      "Which workers are available?",
+      "Which countries do you recruit from?",
+      "Can I pay in installments?",
+      "How do I start a request?"
+    ]
+  }
+}
