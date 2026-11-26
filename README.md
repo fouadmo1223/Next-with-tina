@@ -51,6 +51,13 @@ for cPanel and Plesk are in **[DEPLOY.md](DEPLOY.md)**.
 Prefer TinaCloud for logins (GitHub repos only)? The site still runs on your server and TinaCloud handles editing:
 see **[TINACLOUD.md](TINACLOUD.md)**.
 
+## The `.env` file
+
+- **Locally:** not needed. `npm run dev` runs without one.
+- **On the server:** needed. Copy `.env.example` to `.env` next to `package.json` and fill in **one** section:
+  A for self-hosted ([DEPLOY.md](DEPLOY.md), step 3) or B for TinaCloud ([TINACLOUD.md](TINACLOUD.md), step 3).
+- It holds secrets, so `.gitignore` keeps it out of the repository. Never commit it.
+
 ## Not moved yet
 
 Only the home page is in this project. Its links to other pages (`/about`, `/cvs`, `/countries/...`, `/blogs/...`,

@@ -49,7 +49,7 @@ cd ~
 git clone https://<TOKEN>@github.com/<you>/<repo>.git alnjoom
 ```
 
-Create the Node.js app exactly as in [DEPLOY.md](DEPLOY.md) step 3a (cPanel) or 3b (Plesk): startup file
+Create the Node.js app exactly as in [DEPLOY.md](DEPLOY.md) step 4a (cPanel) or 4b (Plesk): startup file
 `server.js`, Node 22. Then create a file named `.env` in the project folder on the server with these values
 (a file rather than the panel's variable screen, so both the app and the build commands see them):
 
@@ -65,7 +65,13 @@ TINA_TOKEN=your-read-only-token
 GIT_BRANCH=main
 ```
 
-`.env` is ignored by git, so it stays on the server only.
+About this file:
+
+- It is **not** in the repository: `.gitignore` keeps it out because the token is a secret, so you create it once
+  on the server (`cp .env.example .env`, then fill in section **B. TinaCloud** and leave section A empty).
+- **On your computer you don't need a `.env`.** `npm run dev` works without one.
+- **Never commit `.env`** or paste the token into the repo, chats or tickets.
+- The Client ID is built into the dashboard, so after changing it run `npm run build:cloud` again and restart.
 
 `NEXTAUTH_SECRET` and the other `GIT_*` values are not used in this mode.
 

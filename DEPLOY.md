@@ -52,7 +52,37 @@ git config user.email "cms@your-domain.com"
 
 The app must run from this clone: that is what lets dashboard saves be committed and pushed.
 
-## 3a. cPanel: create the Node.js app
+## 3. Create the `.env` file
+
+The server needs a `.env` file with its settings and secrets. It is **not** in the repository (`.gitignore` keeps
+it out, because it holds secrets), so you create it once on the server, next to `package.json`:
+
+```bash
+cd ~/alnjoom
+cp .env.example .env
+```
+
+Open `.env` (cPanel *File Manager* → *Edit*, or `nano .env`) and fill in section **A. Self-hosted**:
+
+| Variable | What to put |
+| --- | --- |
+| `NEXTAUTH_SECRET` | A long random value that signs editor logins. Generate it on the server with `node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"` and paste the output. Keep it secret; changing it logs everyone out. |
+| `NEXTAUTH_URL` | The site's public address, e.g. `https://your-domain.com` (with `https://`, no `/` at the end). |
+| `GIT_BRANCH` | The branch the clone is on, usually `main`. |
+| `GIT_AUTHOR_NAME`, `GIT_AUTHOR_EMAIL` | Who the dashboard's commits are by, e.g. `Alnjoom CMS` / `cms@your-domain.com`. |
+
+Leave section **B. TinaCloud** commented out: setting `NEXT_PUBLIC_TINA_CLIENT_ID` would switch the site to the
+TinaCloud option.
+
+Good to know:
+
+- **On your computer you don't need a `.env`.** `npm run dev` works without one.
+- **Never commit `.env`** or paste its values into the repo, chats or tickets.
+- A `.env` file works for both the running app and the terminal commands (`npm run build`, `npm run reindex`), so
+  use it rather than only the control panel's environment-variable screen.
+- After changing `.env`, restart the app (and run `npm run build` again if you changed a `NEXT_PUBLIC_` value).
+
+## 4a. cPanel: create the Node.js app
 
 *cPanel → Setup Node.js App → Create Application*
 
@@ -64,8 +94,8 @@ The app must run from this clone: that is what lets dashboard saves be committed
 | Application URL | your domain |
 | Application startup file | `server.js` |
 
-Under **Environment variables** add the values from `.env.example`: at least `NEXTAUTH_SECRET`, `NEXTAUTH_URL` and
-`GIT_BRANCH`. (Or copy `.env.example` to `.env` in the project folder and fill it in.) Click **Create**.
+The settings come from the `.env` file you created in step 3, so you can leave **Environment variables** empty.
+Click **Create**.
 
 cPanel then shows a command to enter the app's environment. Run it in the terminal, then:
 
@@ -77,7 +107,7 @@ npm run build
 
 Back in *Setup Node.js App*, click **Restart**.
 
-## 3b. Plesk: create the Node.js app
+## 4b. Plesk: create the Node.js app
 
 *Websites & Domains → your domain → Node.js*
 
@@ -89,13 +119,13 @@ Back in *Setup Node.js App*, click **Restart**.
 | Application mode | production |
 | Application startup file | `server.js` |
 
-Add the environment variables from `.env.example` (*Custom environment variables*), click **NPM install**, then
-**Run script** → `build`. Click **Enable Node.js** / **Restart App**.
+The settings come from the `.env` file you created in step 3. Click **NPM install**, then **Run script** → `build`.
+Click **Enable Node.js** / **Restart App**.
 
 (Plesk's *Git* extension deploys copies of the files rather than a working clone, so clone over SSH as in step 2
 instead of using it.)
 
-## 4. Log in
+## 5. Log in
 
 Open `https://your-domain.com/admin` and log in with:
 
@@ -126,7 +156,8 @@ Nothing is committed for you there: commit and push your changes as usual, then 
 
 ## Troubleshooting
 
-- **"NEXTAUTH_SECRET is not set"**: add it to the app's environment variables and restart.
+- **"NEXTAUTH_SECRET is not set"**: the `.env` file is missing or isn't in the project folder (next to
+  `package.json`). Create it as in step 3 and restart.
 - **Can't log in / logged out right away**: `NEXTAUTH_URL` must be your exact public address with `https://`.
 - **Saves work but don't reach GitLab/Bitbucket**: check the app's log for `[tina] Saved, but git could not commit/push`.
   Usually the clone's URL has no token (`git remote -v`), or the token expired. Fix it with
