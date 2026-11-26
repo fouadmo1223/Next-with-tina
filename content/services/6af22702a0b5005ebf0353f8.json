@@ -1,0 +1,31 @@
+{
+  "title": {
+    "ar": "استقدام العمالة المنزلية بالتقسيط عبر تمارا",
+    "en": "Domestic Worker Recruitment in Installments via Tamara"
+  },
+  "slug": {
+    "ar": "Domestic-Worker-Recruitment-in-installments-via-Tamara",
+    "en": "Domestic-Worker-Recruitment-in -installments-via-Tamara"
+  },
+  "description": {
+    "ar": "استقدم العمالة المنزلية بسهولة وادفع على أقساط مرنة عبر تمارا، لتجربة استقدام أكثر سهولة ومرونة تناسب ميزانيتك.",
+    "en": "Recruit domestic workers easily and pay in flexible installments through Tamara, making the recruitment process more convenient and affordable."
+  },
+  "image": "/uploads/file-1794254437188-604267251.png",
+  "icon": "/uploads/file-1794254473068-407491324.png",
+  "features": [
+    {
+      "ar": "تفاصيل واضحة قبل الطلب",
+      "en": "Clear details before requesting"
+    },
+    {
+      "ar": "إجراءات منظمة",
+      "en": "Organized procedures"
+    },
+    {
+      "ar": "خيارات استقدام متعددة",
+      "en": "Multiple recruitment options"
+    }
+  ],
+  "isActive": true
+}

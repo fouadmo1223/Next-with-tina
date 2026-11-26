@@ -1,0 +1,31 @@
+{
+  "title": {
+    "ar": "نقل الخدمات",
+    "en": "Transfer services"
+  },
+  "slug": {
+    "ar": "Transfer-services",
+    "en": "Transfer-services"
+  },
+  "description": {
+    "ar": "لديك طلب لنقل خدمات عاملة منزلية؟ تواصل معنا لمعرفة التفاصيل والخطوات المرتبطة بالخدمة.\n",
+    "en": "Transferring the sponsorship of a domestic worker in Saudi Arabia"
+  },
+  "image": "/uploads/file-1795424673671-675493592.png",
+  "icon": "",
+  "features": [
+    {
+      "ar": "معرفة متطلبات الخدمة",
+      "en": "Understanding Service Requirements"
+    },
+    {
+      "ar": "وضوح الخطوات والإجراءات",
+      "en": "Clarity of Steps and Procedures"
+    },
+    {
+      "ar": "متابعة الطلب والتواصل",
+      "en": "Order Tracking and Communication"
+    }
+  ],
+  "isActive": true
+}

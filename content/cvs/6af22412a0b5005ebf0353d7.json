@@ -1,0 +1,27 @@
+{
+  "title": {
+    "ar": "MARIA LYN ANDILAB YORONG",
+    "en": "MARIA LYN ANDILAB YORONG"
+  },
+  "slug": {
+    "ar": "link2",
+    "en": "link2"
+  },
+  "country": "content/countries/6af2230fa0b5005ebf0353cd.json",
+  "profession": {
+    "ar": "مربيه",
+    "en": "setter"
+  },
+  "religion": {
+    "ar": "اي حاجه",
+    "en": "any"
+  },
+  "age": 25,
+  "experienceYears": 40,
+  "monthlySalary": 12000,
+  "recruitmentFee": 1200,
+  "externalOfficeFee": 120,
+  "image": "/uploads/file-1794387908713-818128454.png",
+  "cvImage": "/uploads/file-1794387694403-217704261.webp",
+  "file": "/uploads/file-1794387918700-674567282.pdf"
+}

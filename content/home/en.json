@@ -1,0 +1,397 @@
+{
+  "seo": {
+    "title": "",
+    "description": ""
+  },
+  "hero": {
+    "image": "/uploads/file-1794746511456-510136990.png",
+    "title": "Recruiting household help,",
+    "titleHighlight": "with options you know and choose from",
+    "subtitle": "At Distinguished Stars Recruitment, we offer you multiple options for domestic help — from countries and CVs to the request details and procedures. Choose what suits your needs, and learn the recruitment steps clearly from the start.",
+    "cta": "Request Your Recruitment",
+    "ctaHref": "/request",
+    "ctaSecondary": "Browse CVs",
+    "ctaSecondaryHref": "/cvs",
+    "pills": [
+      {
+        "icon": "/uploads/file-1794299078315-831950804.png",
+        "text": "Multiple Options"
+      },
+      {
+        "icon": "/uploads/file-1794299088043-996485035.png",
+        "text": "Multiple Options"
+      },
+      {
+        "icon": "/uploads/file-1794299097799-278512171.png",
+        "text": "Multiple Options"
+      }
+    ]
+  },
+  "about": {
+    "eyebrow": "About Distinguished Stars",
+    "headingStart": "Distinguished Stars",
+    "headingAccent": "And everything you need to make a confident choice",
+    "bodyOne": "Choosing a recruitment agency in Tabuk isn’t just about the variety of options; clear procedures, knowledge of the details, and easy access to information make a real difference in the recruitment experience.",
+    "bodyTwo": "At Distinguished Stars, we help you find what you need at every stage—from comparing options and resumes to tracking your application and communicating with the appropriate staff member.",
+    "cta": "Contact Us via WhatsApp",
+    "whatsappMessage": "Contact us on WhatsApp because you're a valued customer",
+    "consultationImage": "/uploads/file-1794299642702-510493664.png",
+    "workerImage": "/uploads/file-1794299644524-759909276.png",
+    "photoCta": "A clearer choice, step by step"
+  },
+  "features": {
+    "headingStart": "This is how",
+    "headingAccent": "Distinguished Stars delivers its services",
+    "intro": "Every service starts with your need and ends with the best choice for you",
+    "items": [
+      {
+        "image": "/uploads/file-1794300143863-965163674.png",
+        "title": "Multiple nationalities",
+        "description": "Recruitment from six countries, with a separate page for each country that includes details on the available options."
+      },
+      {
+        "image": "/uploads/file-1794300168072-369142225.png",
+        "title": "Track Order",
+        "description": "We'll walk you through the steps of the application process and the basic costs, and we'll stay in touch with you throughout the process until you arrive."
+      },
+      {
+        "image": "/uploads/file-1794300174466-233886072.png",
+        "title": "Specialized Staff",
+        "description": "Each country has a dedicated representative who can answer your questions and help you understand the details of the available options."
+      },
+      {
+        "image": "/uploads/file-1794300212234-414282210.png",
+        "title": "Post-Arrival Support",
+        "description": "Our support doesn't end when the workers arrive; we provide communication and translation support tailored to the service provided."
+      }
+    ]
+  },
+  "services": {
+    "heading": "All Recruitment Services in One Place",
+    "intro": "From figuring out what you're looking for, to choosing the right CV and completing the procedures, you'll find the essential services you need for a clearer recruitment journey.",
+    "items": [
+      {
+        "service": "content/services/6af22702a0b5005ebf0353f8.json",
+        "cta": "Start Your Recruitment Request"
+      },
+      {
+        "service": "content/services/6b04003692d83207c0dcea1a.json",
+        "cta": "Recruitment of Domestic Workers"
+      },
+      {
+        "service": "content/services/6b0401d192d83207c0dceac0.json",
+        "cta": "Service Transfer"
+      }
+    ]
+  },
+  "professions": {
+    "heading": "Choose the career that best suits your needs",
+    "intro": "Your search may start with a specific task around the house, and that’s where the selection process begins. Identify the service you’re looking for, then review the available options and learn about the steps to request it.",
+    "items": [
+      {
+        "icon": "/uploads/file-1794301166042-358665197.png",
+        "title": "Domestic worker",
+        "subtitle": "For everyday household chores",
+        "stepsTitle": "Ordering Steps",
+        "photo": "/uploads/file-1794301291395-533093978.png",
+        "badge": "Choose the option that best suits your needs",
+        "steps": [
+          {
+            "title": "Identify Your Needs",
+            "description": "Select the “Domestic Worker” option and browse the available nationalities and options."
+          },
+          {
+            "title": "Review the Details",
+            "description": "Review the options, costs, and requirements before placing your order."
+          },
+          {
+            "title": "Submit a recruitment request",
+            "description": "Choose the option that suits you best and complete the application form and required procedures."
+          }
+        ]
+      },
+      {
+        "icon": "/uploads/file-1794301318708-236208908.png",
+        "title": "Private Driver",
+        "subtitle": "For transportation and household needs.",
+        "stepsTitle": "Ordering Steps",
+        "photo": "/uploads/file-1794301407120-358606689.png",
+        "badge": "Choose the option that best suits your needs",
+        "steps": [
+          {
+            "title": "Specify your requirements",
+            "description": "Choose a career as a private driver and find the option that best suits your needs."
+          },
+          {
+            "title": "Review the options",
+            "description": "Learn about the available options and the details associated with each request."
+          },
+          {
+            "title": "Complete the request",
+            "description": "Select the appropriate option and submit the recruitment information to complete the process."
+          }
+        ]
+      },
+      {
+        "icon": "/uploads/file-1794301441073-951375196.png",
+        "title": "Nanny",
+        "subtitle": "To care for children and address their needs.",
+        "stepsTitle": "Ordering Steps",
+        "photo": "/uploads/file-1794301540039-597123169.png",
+        "badge": "Choose the option that best suits your needs",
+        "steps": [
+          {
+            "title": "Determine the family's needs",
+            "description": "Choose a childcare career based on the type of care required."
+          },
+          {
+            "title": "Review the available options",
+            "description": "Review the options and details before making your decision."
+          },
+          {
+            "title": "Submit your application",
+            "description": "Choose the option that suits you best and complete the application form and necessary procedures."
+          }
+        ]
+      },
+      {
+        "icon": "/uploads/file-1795452955080-311568410.png",
+        "title": "Housekeeper",
+        "subtitle": "For general household chores.",
+        "stepsTitle": "Ordering Steps",
+        "photo": "/uploads/file-1795452966524-131826869.png",
+        "badge": "Choose the option that best suits your needs",
+        "steps": [
+          {
+            "title": "Choose a Career",
+            "description": "Identify the profession of a domestic worker and review the available options."
+          },
+          {
+            "title": "See details",
+            "description": "Review the option details, cost, and requirements associated with the order."
+          },
+          {
+            "title": "Submit a recruitment request",
+            "description": "Select the appropriate option and complete the application steps."
+          }
+        ]
+      }
+    ]
+  },
+  "cvs": {
+    "heading": "Review the details of all your options before making your decision",
+    "intro": "You don't need to select employees based solely on their name or nationality. Review the available resumes, read the information they contain, and then compare the options that best fit your needs.",
+    "items": [
+      {
+        "cv": "content/cvs/6af22412a0b5005ebf0353d7.json"
+      }
+    ]
+  },
+  "countries": {
+    "heading": "Multiple countries and options to suit different needs",
+    "intro": "Nationality may be the first thing you look for, but it’s not the only information you need. So you can go to each country’s page to find out the details regarding recruitment, cost, salary, and available arrival dates.",
+    "items": [
+      {
+        "country": "content/countries/6af2230fa0b5005ebf0353cd.json",
+        "image": "/uploads/file-1794302316249-645513948.png"
+      },
+      {
+        "country": "content/countries/6af2e1391e0ae0ccc38391a4.json",
+        "image": ""
+      },
+      {
+        "country": "content/countries/6b03f47292d83207c0dce91e.json",
+        "image": ""
+      },
+      {
+        "country": "content/countries/6b03f4ca92d83207c0dce923.json",
+        "image": ""
+      },
+      {
+        "country": "content/countries/6b03f53692d83207c0dce928.json",
+        "image": ""
+      },
+      {
+        "country": "content/countries/6b03f5c192d83207c0dce940.json",
+        "image": ""
+      }
+    ]
+  },
+  "offers": {
+    "heading": "Your chance to hire at a better rate",
+    "intro": "If you're planning to hire a domestic worker, you may find an opportunity that suits your needs among our current offers. We've selected a few hiring options to provide you with limited-time offers, exclusive discounts, and a variety of packages, along with a detailed explanation of each option before you make your decision.",
+    "image": "/uploads/file-1794302701335-649474192.png",
+    "cta": "Discover Available Offers",
+    "whatsappMessage": "Discover our new available offers",
+    "items": [
+      {
+        "icon": "/uploads/file-1794302639366-543061535.png",
+        "title": "Limited-Time Offer",
+        "description": "Import 4,650 YAL from Ethiopia. Take advantage of the discounted price during the promotion period."
+      },
+      {
+        "icon": "/uploads/file-1794302658140-266738619.png",
+        "title": "Exclusive Discounts",
+        "description": "Special offers on select options—you can view the discount amount, country, recruitment details, and offer terms before applying."
+      },
+      {
+        "icon": "/uploads/file-1794302677824-518951451.png",
+        "title": "Various Recruitment Packages",
+        "description": "Options and packages designed to meet a variety of needs, with the ability to review the details of each package and what it includes before making a selection."
+      }
+    ]
+  },
+  "requirements": {
+    "heading": "What do you need to get started with your order?",
+    "intro": "Before you start, make sure you meet the basic requirements related to the recruitment request. Some procedures are carried out through the Musaned platform, and requirements may vary depending on the employer's status and request type.",
+    "cta": "View Full Requirements",
+    "whatsappMessage": "View Full Requirements",
+    "documents": {
+      "title": "Documents",
+      "subtitle": "Get your paperwork ready",
+      "icon": "/uploads/file-1794303045973-576518260.png",
+      "items": [
+        "A valid recruitment visa issued through the Musaned platform.",
+        "The ID or residence number matches the information associated with Absher.",
+        "Contract Documentation.",
+        "Payment of the required fees."
+      ]
+    },
+    "procedures": {
+      "title": "Procedures",
+      "subtitle": "Organize Your Steps",
+      "icon": "/uploads/file-1794303110931-53625968.png",
+      "items": [
+        "Log in to the Musanad platform.",
+        "Verify that the visa requirements have been met.",
+        "Enter the required data.",
+        "Proof of financial capacity.",
+        "Certification of the Accuracy of the Information.",
+        "Complete payment of the fees."
+      ]
+    }
+  },
+  "testimonials": {
+    "heading": "Testimonials Based on Our Customers' Experiences",
+    "intro": "Stories that shed light on a different aspect of each of our clients’ recruitment journeys",
+    "items": [
+      {
+        "rating": 3,
+        "quote": "\"I love how simple and motivating the process is. Every step and piece of advice feels practical, and I can see real improvements in my daily routine. It was a turning point for me.\"",
+        "avatar": "/uploads/file-1794305745350-507174858.jpg",
+        "name": "Ahmed Abdullah",
+        "role": "Client"
+      },
+      {
+        "rating": 3,
+        "quote": "\"I love how simple and motivating the process is. Every step and piece of advice feels practical, and I can see real improvements in my daily routine. It was a turning point for me.\"",
+        "avatar": "/uploads/file-1794305745350-507174858.jpg",
+        "name": "Ahmed Abdullah",
+        "role": "Client"
+      },
+      {
+        "rating": 4,
+        "quote": "\"I love how simple and motivating the process is. Every step and piece of advice feels practical, and I can see real improvements in my daily routine. It was a turning point for me.\"",
+        "avatar": "/uploads/file-1794305745350-507174858.jpg",
+        "name": "Ahmed Abdullah",
+        "role": "Client"
+      },
+      {
+        "rating": 5,
+        "quote": "\"I love how simple and motivating the process is. Every step and piece of advice feels practical, and I can see real improvements in my daily routine. It was a turning point for me.\"",
+        "avatar": "/uploads/file-1794305745350-507174858.jpg",
+        "name": "Ahmed Abdullah",
+        "role": "Client"
+      },
+      {
+        "rating": 5,
+        "quote": "\"I love how simple and motivating the process is. Every step and piece of advice feels practical, and I can see real improvements in my daily routine. It was a turning point for me.\"",
+        "avatar": "/uploads/file-1794305745350-507174858.jpg",
+        "name": "Ahmed Abdullah",
+        "role": "Client"
+      }
+    ]
+  },
+  "blog": {
+    "heading": "The latest articles on everything related to recruitment",
+    "intro": "Before submitting an application to hire female workers, you may need to learn about the requirements, compare your options, or understand the hiring process. On our blog, you’ll find information to help you find the answers you need before making your decision.",
+    "viewAll": "View All Articles",
+    "items": [
+      {
+        "post": "content/blogs/6af2ee82bfc408c5051e8c63.json"
+      },
+      {
+        "post": "content/blogs/6af225e3a0b5005ebf0353ed.json"
+      }
+    ]
+  },
+  "faq": {
+    "heading": "Frequently Asked Questions Before Starting the Recruitment Process",
+    "items": [
+      {
+        "question": "What is the best recruitment company in Tabuk?",
+        "answer": "Choosing the right recruitment agency isn't just about the name. It's important to compare the available services, the clarity of the procedures, the costs, the employment options, and how requests are handled before signing a contract."
+      },
+      {
+        "question": "How much does it cost to recruit a domestic worker?",
+        "answer": "The cost of recruitment varies depending on nationality, the type of service, and the specifics of the request; therefore, there is no single price that applies to all cases."
+      },
+      {
+        "question": "What are the requirements for recruiting a housemaid?",
+        "answer": "The conditions vary depending on the employer’s status and the type of application, and are subject to the official requirements in effect at the time the application is submitted through the relevant authorities and platforms."
+      },
+      {
+        "question": "How do I know if a recruitment company is trustworthy?",
+        "answer": "Start by verifying the agency's information and the services it offers, review the pricing details and procedures, and confirm the official requirements before signing a contract."
+      },
+      {
+        "question": "What nationalities are eligible for domestic worker recruitment?",
+        "answer": "Al-Nujoom Al-Mumayyaza offers recruitment options from the Philippines, Ethiopia, Bangladesh, Pakistan, Kenya, and Burundi. You can find details about each country on its respective recruitment page."
+      },
+      {
+        "question": "Can I choose the workers myself?",
+        "answer": "Yes, you can browse the available resumes, review their details, and then choose the one that best suits your family's needs."
+      },
+      {
+        "question": "Where can I hire domestic workers?",
+        "answer": "You can recruit domestic workers from the countries listed by the agency, then review the details for each country and compare your options before submitting your application."
+      },
+      {
+        "question": "What are the fees for hiring domestic workers?",
+        "answer": "Prices vary depending on nationality, service, and order details. You can view the current prices for each country before placing your order."
+      }
+    ]
+  },
+  "cta": {
+    "image": "/uploads/file-1794307015405-147399418.png",
+    "heading": "Ready to start your recruitment application?",
+    "description": "You've learned about the options and familiarized yourself with the steps. Tell us what you need, and our team will help you figure out the right path for your request.",
+    "whatsapp": {
+      "enabled": true,
+      "label": "Contact Us via WhatsApp",
+      "message": "Contact Us via WhatsApp"
+    },
+    "request": {
+      "enabled": true,
+      "label": "Start Your Recruitment Request",
+      "href": "/request"
+    },
+    "cvs": {
+      "enabled": false,
+      "label": "",
+      "href": "/cvs"
+    },
+    "contact": {
+      "enabled": false,
+      "label": "",
+      "href": "/contact"
+    }
+  },
+  "contact": {
+    "headingStart": "Need Help",
+    "headingAccent": "Choosing?",
+    "intro": "If you're comparing options or have a question about recruitment, send us your inquiry and the Distinguished Stars team will respond via WhatsApp.",
+    "formTitle": "Need help choosing?",
+    "submit": "Submit Inquiry"
+  }
+}

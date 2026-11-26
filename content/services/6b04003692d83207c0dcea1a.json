@@ -1,0 +1,31 @@
+{
+  "title": {
+    "ar": "تأجير عمالة منزلية",
+    "en": "Domestic Worker Rental"
+  },
+  "slug": {
+    "ar": "Domestic-Worker-Rental",
+    "en": "Domestic-Worker-Rental"
+  },
+  "description": {
+    "ar": "اختر من خيارات الاستقدام المتاحة، واطلع على تفاصيل الدولة والتكلفة والإجراءات قبل تقديم طلبك.\n",
+    "en": "Choose from the available recruitment options, and review the details regarding the country, cost, and procedures before submitting your application.\n"
+  },
+  "image": "/uploads/file-1795424288238-674890621.png",
+  "icon": "",
+  "features": [
+    {
+      "ar": "خيارات استقدام متعددة",
+      "en": "Multiple Recruitment Options"
+    },
+    {
+      "ar": "تفاصيل واضحة قبل الطلب",
+      "en": "Clear Details Before Ordering"
+    },
+    {
+      "ar": "إجراءات منظمة",
+      "en": "Standard Procedures"
+    }
+  ],
+  "isActive": true
+}
