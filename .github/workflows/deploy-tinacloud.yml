@@ -1,0 +1,57 @@
+# TinaCloud mode only (see TINACLOUD.md). Delete this file if you use the self-hosted setup (DEPLOY.md).
+#
+# Every push to the branch (a dashboard save from TinaCloud, or a developer's commit) updates your server over SSH:
+#  - Only content or uploads changed: `git pull`. The site reads content on every request, so that is all it needs.
+#  - Code changed: `git pull`, `npm install`, `npm run build:cloud`, then restart the app.
+#
+# Repository secrets (GitHub → Settings → Secrets and variables → Actions):
+#   SSH_HOST        your server's host name or IP
+#   SSH_USER        the SSH / cPanel user
+#   SSH_KEY         a private key whose public key is authorized on the server
+#   SSH_PORT        optional, defaults to 22
+#   APP_DIR         the project's folder on the server, e.g. /home/youruser/alnjoom
+#   NODE_ACTIVATE   optional, the command that selects your Node version, e.g. on cPanel:
+#                   source /home/youruser/nodevenv/alnjoom/22/bin/activate
+name: Update server
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pull and (if code changed) rebuild on the server
+        uses: appleboy/ssh-action@v1
+        env:
+          APP_DIR: ${{ secrets.APP_DIR }}
+          NODE_ACTIVATE: ${{ secrets.NODE_ACTIVATE }}
+          BRANCH: ${{ github.ref_name }}
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.SSH_PORT || 22 }}
+          envs: APP_DIR,NODE_ACTIVATE,BRANCH
+          script: |
+            set -e
+            cd "$APP_DIR"
+            if [ -n "$NODE_ACTIVATE" ]; then eval "$NODE_ACTIVATE"; fi
+            git fetch origin "$BRANCH"
+            CHANGED="$(git diff --name-only HEAD "origin/$BRANCH")"
+            git pull --ff-only origin "$BRANCH"
+            if [ -z "$CHANGED" ]; then echo "Already up to date."; exit 0; fi
+            if echo "$CHANGED" | grep -qvE '^(content/|public/uploads/)'; then
+              echo "Code changed: installing and rebuilding."
+              npm install
+              npm run build:cloud
+              mkdir -p tmp && touch tmp/restart.txt   # restarts the app on cPanel / Plesk (Passenger)
+            else
+              echo "Only content changed: the site shows it on the next page load."
+            fi
